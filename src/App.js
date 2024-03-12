@@ -8,8 +8,11 @@ function App() {
     <BrowserRouter>
       <Header />
       <Routes>
-        <Route path="/" element={<Main />}></Route>
-        <Route path="/detail/:id" element={<Detail />}></Route>
+        <Route path={`${process.env.PUBLIC_URL}/`} element={<Main />}></Route>
+        <Route
+          path={`${process.env.PUBLIC_URL}/detail/:id`}
+          element={<Detail />}
+        ></Route>
       </Routes>
     </BrowserRouter>
   );
