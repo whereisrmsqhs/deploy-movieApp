@@ -1,0 +1,41 @@
+$theme_color: #ffd53bad;
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 30px;
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+}
+
+.title {
+  padding-left: 8px;
+}
+
+input {
+  &::placeholder {
+    color: $theme_color;
+  }
+
+  background-color: transparent;
+  color: $theme_color;
+
+  border-style: none;
+  border: 2px solid;
+  border-radius: 20px;
+
+  padding: 10px;
+  flex-grow: 0.5;
+}
+
+.navbar-nav-list {
+  display: flex;
+
+  li {
+    padding-left: 10px;
+  }
+}
