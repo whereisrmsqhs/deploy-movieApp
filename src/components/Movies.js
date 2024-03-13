@@ -11,7 +11,7 @@ function Movies({ id, coverImg, genre, rating }) {
   };
   const onMouseLeave = () => setIsHovered(false);
   return (
-    <Link to={`/detail/${id}`}>
+    <Link to={`${process.env.PUBLIC_URL}/detail/${id}`}>
       <div
         className="movie-container"
         onMouseEnter={onMouseEnter}
